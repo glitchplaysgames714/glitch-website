@@ -15,6 +15,28 @@
             padding: 0;
         }
 
+        nav {
+            background-color: #111;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav a {
+            color: #00b0ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         h1 {
             font-size: 3em;
             margin-top: 2em;
@@ -28,15 +50,6 @@
         p {
             margin-top: 1em;
             line-height: 1.5;
-        }
-
-        a {
-            color: #00b0ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
 
         .container {
@@ -56,6 +69,11 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="https://discord.gg/f7Qy6QkbwW">Placedex</a>
+        <a href="https://discord.gg/mC7dYQS6h9">Discord</a>
+    </nav>
+
     <div class="container">
         <h1>Hi I'm Glitch :3</h1>
         <h3>I have experience in Python development</h3>
