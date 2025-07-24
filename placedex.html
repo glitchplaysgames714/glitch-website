@@ -67,7 +67,18 @@
   <button class="image-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1338606186697592853&permissions=0&integration_type=0&scope=bot'">
     Add to your server!
   </button><br><br><br>
-  <a href="https://discord.gg/f7Qy6QkbwW"><img height="30" src="/images/discord-mark-black.svg"></a>
+  <a href="https://discord.gg/f7Qy6QkbwW"><img height="30" id="discordimage" src=""></a>
+    <script>
+    // Generate a random number between 1 and 100
+    const chance = Math.floor(Math.random() * 100) + 1;
 
+    // Image sources
+    const normalImage = '/images/discord-mark-blurple.svg';   // Replace with your normal image path
+    const rareImage = '/images/discord-mark-pink.svg';       // Replace with your rare image path
+
+    // Pick image based on chance
+    const imgElement = document.getElementById('discordimage');
+    imgElement.src = (chance === 1) ? rareImage : normalImage;
+  </script>
 </body>
 </html>
