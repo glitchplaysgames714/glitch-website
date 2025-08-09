@@ -1,0 +1,63 @@
+<h1 id="placedex-discord-bot-privacy-policy">Placedex Discord Bot - Privacy policy</h1>
+<p>The following document explains what data is collected by Placedex.</p>
+<h3 id="glossary">Glossary</h3>
+<ul>
+<li>&quot;Application&quot; or &quot;Discord application&quot; refers to the Discord bot user, its associated owners and the servers is has</li>
+<li>&quot;Data&quot; refers to data stored by an individual instance, including personal data</li>
+<li>&quot;Bot&quot; or &quot;instance&quot; refers to the copy of the code running the Discord application, with its own data</li>
+<li>&quot;Collectible&quot; refers to any object that is meant to be collected, such as Cards or other future means like virtual currency</li>
+<li>&quot;Application owners&quot; refers to the owners of the Discord application, meaning the one with any form of access to the application&#39;s authentication method and data belonging to the instance. This is usually referred to as the &quot;Placedex core team&quot; or &quot;Placedex team&quot;.</li>
+<li>&quot;PlaceDex moderation team&quot; or &quot;moderation team&quot; refers to the owners of the Discord application and the users they may chose to be part of the moderation team.</li>
+</ul>
+<h2 id="open-source">Open source</h2>
+<p>Because Placedex is a self hosted version of BallsDex It follows the same liscensing rules as Ballsdex. The code of BallsDex is open source under the MIT licence and available at <a href="https://github.com/laggron42/BallsDex-DiscordBot">https://github.com/laggron42/BallsDex-DiscordBot</a>. A copy of the licence can be found below.</p>
+<details>
+  <summary>The MIT licence</summary>
+
+  &gt; Permission is hereby granted, free of charge, to any person obtaining a copy
+  &gt; of this software and associated documentation files (the &quot;Software&quot;), to deal
+  &gt; in the Software without restriction, including without limitation the rights
+  &gt; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  &gt; copies of the Software, and to permit persons to whom the Software is
+  &gt; furnished to do so, subject to the following conditions:
+
+  &gt; The above copyright notice and this permission notice shall be included in all
+  &gt; copies or substantial portions of the Software.
+
+  &gt; THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  &gt; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  &gt; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  &gt; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  &gt; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  &gt; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  &gt; SOFTWARE.
+
+</details>
+
+<p>You may check the source code and see how the data is managed, in addition to the following policy.</p>
+<h2 id="what-data-is-collected">What data is collected</h2>
+<p>PlaceDex collects the following data from Discord:</p>
+<ul>
+<li>User IDs, this is used to identify you inside our database</li>
+<li>Server (or guild) IDs, this is used to store settings necessary to the bot&#39;s operation</li>
+<li>Channel IDs, this is used to know in which channel should the collectibles spawn</li>
+</ul>
+<p>In addition, the following data proper to PlaceDex is created and used:</p>
+<ul>
+<li>The list of collectibles owned by a user of the service</li>
+<li>A history of trades done on collectibles, including the users that once owned the said collectible but do not anymore</li>
+<li>Various settings configured by an individual user or the server, such as player policies or spawn silent option</li>
+</ul>
+<p>The bot has access to the content of messages but is used solely for the purpose of anti-cheat and the said content is not stored longer than necessary for the analysis (under one second). Message content is never cached or stored, and cannot be accessed by the administrators to read your messages.</p>
+<h2 id="how-the-data-is-stored">How the data is stored</h2>
+<p>All persistent data is stored on a PostgreSQL server, running on a server hosted by Hetzner.</p>
+<p>Interaction between the bot and the database server is exclusively local using <a href="https://github.com/tortoise/tortoise-orm">Tortoise ORM</a>.</p>
+<h2 id="access-to-the-data">Access to the data</h2>
+<p>The only people allowed to access the data are the application owners.</p>
+<p>Any application owner may interact with the bot and the administrator interface.</p>
+<p>The PlaceDex moderation teams do not have access to the data.</p>
+<p>The data may never be made available to the public, and its access must be secured accordingly.</p>
+<h2 id="your-rights">Your rights</h2>
+<p>You may request a copy or the deletion of your personal data held by the application by contacting the application owners. The recommended way is sending an email to &quot;placedex@glitchpdev.com&quot;. </p>
+<hr>
+<p>Last updated 23rd November 2024</p>
