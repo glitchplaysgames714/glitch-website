@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Placedex!</title>
+  <title>Placedex</title>
+  <link rel="icon" type="image/x-icon" href="images/Placedexicon.ico">
+  <meta name="robots" content="noindex">
+  <meta content="Placedex" property="og:title" />
+  <meta content="Placedex is a bot all about people, factions and arts from r/place games." property="og:description" />
+  <meta content="https://glitchpdev.com/placedex" property="og:url" />
+  <meta content="https://cdn.discordapp.com/avatars/1338606186697592853/ff321a4735cfdf709c1a2afd833bad64?size=1024" property="og:image" />
+  <meta content="#5865F2" data-react-helmet="true" name="theme-color" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Placedex is a bot all about people, factions and arts from r/place games." />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #222;
+      color: #eee;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    div {
+      margin-bottom: 40px;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .image-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 30px;
+      background-image: url('https://raw.githubusercontent.com/glitchplaysgames714/glitch-website/refs/heads/main/images/transflagthijng.png');
+      background-size: cover;
+      background-position: center;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 30px;
+      color: grey;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+      transition: filter 0.3s ease;
+      min-width: 300px;
+      min-height: 80px;
+    }
+
+    .image-button:hover {
+      filter: brightness(85%);
+    }
+  </style>
 </head>
 <body>
 
-<h1>On Augest 7th at 6:52 PM placedex permanently shutdown. a few developers are currently working on bringing it back</h1>
+  <h1>Placedex!</h1>
+  <div>
+    Placedex is a bot all about people, factions and arts from r/place games.<br>
+    the bot is very similar to ballsdex every so often the bot spawns a random card that can be collected by guessing its name.<br>
+    The bot also includes features like Trading, Crafting AND GAMBLING🎰🎰🎰🎰🎰
+  </div>
 
+  <button class="image-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1403483255860367372'">
+    Add to your server!
+  </button><br><br><br>
+  <a href="https://https://discord.gg/WRqah6Agj4"><img height="30" id="discordimage" src=""></a>
+  <a href="https://placedex.glitchpdev.com"><img height="30" src="https://static.wikitide.net/metawiki/3/35/Miraheze_Logo.svg"></a>
+    <script>
+    // Generate a random number between 1 and 100
+    const chance = Math.floor(Math.random() * 100) + 1;
+
+    // Image sources
+    const normalImage = '/images/discord-mark-blurple.png';   // Replace with your normal image path
+    const rareImage = '/images/discord-mark-pink.png';       // Replace with your rare image path
+
+    // Pick image based on chance
+    const imgElement = document.getElementById('discordimage');
+    imgElement.src = (chance === 1) ? rareImage : normalImage;
+  </script>
 </body>
 </html>
